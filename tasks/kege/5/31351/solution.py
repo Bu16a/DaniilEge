@@ -1,13 +1,6 @@
-def f(a):
-    b=""
-    while a>0:
-        b=str(a%2)+b
-        a=a//2
-    return b
-
-t=8e10
+t=float('inf')
 for a in range(1,1000):
-    b=f(a)
+    b=bin(a)[2:]
     if b.count('1')%2==0:
         b='10'+b[2:]+'0'
     else:

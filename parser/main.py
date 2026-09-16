@@ -1,8 +1,10 @@
-import os
 import argparse
+import os
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
 
 def clean_html(html_text: str) -> str:
     """Очищает HTML-разметку, сохраняя структуру текста."""

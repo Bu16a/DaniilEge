@@ -1,7 +1,7 @@
 from itertools import product
 
 t=0
-m=0
+m=1
 a = product('ЕЛНОСЦ', repeat=6)
 for i in a:
     t+=1

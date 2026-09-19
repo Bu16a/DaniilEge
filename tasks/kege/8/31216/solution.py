@@ -1,6 +1,6 @@
 from itertools import product
 
-count = =
+count = 0
 t=0
 a = product('ВЕКОТЦ', repeat=6)
 for i in a:

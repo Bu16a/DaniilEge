@@ -1,8 +1,20 @@
-def solve(*args, **kwargs):
-    """
-    Основная логика решения.
-    """
+from itertools import product
 
+t=0
+m=1
+a = product('ЕЛНОСЦ', repeat=6)
+for i in a:
+    t+=1
+    if t%2==0:
+        continue
+    s = ''.join(i)
 
-if __name__ == "__main__":
-    print(solve())
+    if s[0] == 'Ц' or s[0] == 'Н':
+        continue
+
+    if s.count('Ц') != 1 or s.count('Н') != 1:
+        continue
+
+    m=t
+
+print(m)
